@@ -25,4 +25,4 @@ def analyze_code():
             return json.dumps(results)
 if __name__ == '__main__':
     # Utiliza la URL de tu aplicación si se ejecuta localmente
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=10000)

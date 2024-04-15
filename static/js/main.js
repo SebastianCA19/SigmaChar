@@ -13,7 +13,7 @@ function sendCode(code) {
     if(originalDocumentation == null){
         originalDocumentation = document.querySelector(".results-content").textContent;
     }
-    fetch('http://127.0.0.1:5000/analyzeCode', {
+    fetch('https://sigmachar.onrender.com/analyzeCode', {
         method: 'POST',
         headers:{
             'Content-Type': 'application/json',
