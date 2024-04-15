@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗿 SigmaChar</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <h2 class="title">SIGMA</h2>
+        <img class="logo" src="../static/assets/img/logoSigmaCharSinFondo.png" width="100px">
+        <h2 class="title">CHAR</h2>
+    </header>
+    <div class="container">
+        <div class="input-section">
+            <textarea id="inputCode" class="input" rows="4" cols="50"></textarea>
+            <button onclick="getInput()">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">ENVIAR</span>             
+            </button>
+        </div>
+        <div class="results">
+            <textarea id="documentation" class="results-content" readonly>
+SigmaChar is a programming language based on the sigma lexicon, here is a small summary of our language:
+
+        1. Variable Types:
+            - bool -> STATUS
+            - int -> SIGMA 
+            - float -> REAL
+            - char -> CHAD
+            - str -> GIGACHAD
+        2. Control Flow Keywords:
+            - If -> ALPHA
+            - Else -> BETA
+            - While -> ALPHA_LOOP
+            - For -> BETA_LOOP
+            - break -> BYEBYE
+            - return -> ELEVATE
+        3. Logical Operators:
+            - not -> FAKE 
+            - and -> MOGGED  
+            - or -> GOD 
+        4. Reserved Keywords:
+            - def -> COMMAND
+            - True -> VERUM
+            - False -> FALSUM
+            - None -> NIHIL
+        5. Operators:
+            - Addition (+)
+            - Subtraction (-)
+            - Multiplication (*)
+            - Division (/)
+            - Greater than (>)
+            - Greater than or equal to (>=)
+            - Less than (<)
+            - Less than or equal to (<=)
+            - Equal to (==)
+            - Not equal to (!=)
+            - Assignment (<-)
+        6. Symbols:
+            - Left Parenthesis   ->  '('
+            - Right Parenthesis  ->  ')'
+            - Separation         ->  ';'
+            - Body Structure     ->  ':'
+            - String Delimiter   ->  '@'
+            - Comment Delimiter  ->  '#' 
+            - End of Line        ->  '$'     
+    Example:
+        SIGMA integer <- 2$
+        REAL float <- 0$
+        ALPHA (integer == 2 MOGGED float == 0):
+            float <- integer * 3,1416$
+            </textarea>
+            <h5 class="back" onclick="back()">Return to documentation</h5>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright">
+            © 2024 Todos los derechos reservados.
+        </div>
+        <div class="github-link">
+            <a href="https://github.com/Edmh1/Lexer" target="_blank">
+                <img src="../static/assets/img/github.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

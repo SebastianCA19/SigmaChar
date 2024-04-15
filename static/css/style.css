@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Akira';
+    src: url('../assets/fonts/Akira.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../assets/fonts/Nexa-ExtraLight.ttf') format('opentype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #7891a591;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+header {
+    background-color: #0f5188;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+}
+
+.title {
+    font-family: 'Akira';
+    font-size: 40px;
+    margin: 0;
+    color: #1A120B;
+    white-space: nowrap;
+}
+
+.logo {
+    margin: 0 10px;
+}
+
+.container {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between; 
+    width: 80%;
+    height: 65%; /* Ajusta la altura */
+}
+
+.input-section, .results {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 10px; 
+}
+
+.input-section .input, .results .results-content {
+    border: none;
+    width: 90%;
+    height: 100%; 
+    resize: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #262626;
+    font-size: 18px;
+    font-weight: 900;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.input-section .input:focus {
+    outline: none;
+}
+
+.input-section .input::-webkit-scrollbar, .results .results-content::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+}
+
+.input-section .input::-webkit-scrollbar-thumb, .results .results-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+}
+
+.input-section .input::-webkit-scrollbar-track, .results .results-content::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+
+.input-section .input::-webkit-scrollbar-thumb:hover, .results .results-content::-webkit-scrollbar-thumb:hover {
+    cursor: default;
+}
+
+button {
+    font-family:'Akira', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    letter-spacing: 2px;
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+  
+  .label {
+    position: relative;
+    top: -1px;
+  }
+  
+  .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: rgba(16, 83, 185, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0f5188;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.github-link img {
+    width: 35px;
+}
+
+.github-link a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.github-link a:hover {
+    text-decoration: underline;
+}
+
+.back {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 15px; 
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.back:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
